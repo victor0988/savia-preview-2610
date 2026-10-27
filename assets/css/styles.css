@@ -192,7 +192,8 @@ h1,h2,h3{font-family:var(--serif);font-variation-settings:"SOFT" 50,"WONK" 0;mar
 .consola-item .t{font-family:var(--serif);font-size:1.6rem;font-weight:375;letter-spacing:-.02em;line-height:1.1}
 .consola-item .d{display:block;font-family:var(--sans);font-size:.875rem;line-height:1.5;color:rgba(247,244,239,.55);margin-top:6px;max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
 .consola-item.on .d{max-height:80px}
-.consola-view{grid-column:5 / span 8;position:sticky;top:96px}
+.consola-view{grid-column:5 / span 8;position:sticky;top:96px;align-self:start}
+@media (max-height:680px){.consola-view{position:static}}
 .consola-view .shot{transition:opacity .4s ease-out}
 .consola-view .shot-in{transition:transform .9s var(--ease)}
 .placeholder-shot{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;color:rgba(234,223,208,.55);font-size:.875rem;background:repeating-linear-gradient(0deg,rgba(234,223,208,.03) 0 1px,transparent 1px 28px),#16130F}
